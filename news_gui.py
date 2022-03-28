@@ -80,7 +80,7 @@ helpmenu = Menu(menubar, tearoff=0)
 
 #widget attributes
 base.config(background="lightblue")
-base.geometry("550x250")     # setting the window width & height
+base.geometry("550x750")     # setting the window width & height
 base.resizable(False, False)    # allow resizable window
 base.title('Do Something')
 
@@ -108,8 +108,8 @@ identifierLabels.pack(side=LEFT)
 btn.pack(ipadx=25, ipady=15, expand=True)     # adding the do something button
 btn_low.pack(ipadx=5, ipady=5, expand=FALSE, side=RIGHT)     # adding the low of (day, week, month, year) button
 btn_high.pack(ipadx=5, ipady=5, expand=FALSE)     # adding the low of (day, week, month, year) button
-btn_exit.pack(ipadx=25, ipady=15, expand=True)     # adding the exit button in center but below do something button
+btn_exit.pack(ipadx=25, ipady=15, expand=TRUE)     # adding the exit button in center but below do something button
 left_frame.pack(side=LEFT)
-lbl.pack()
+lbl.pack(ipadx=5, ipady=10, expand=TRUE)
 frame.pack()     #left holding frame
 base.mainloop()
